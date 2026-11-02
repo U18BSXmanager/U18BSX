@@ -352,10 +352,13 @@ button.choice:disabled {
 
   <div class="instructions" id="instructions" hidden>
     <strong>How scoring works</strong>
-    <ul>
-      <li>A strike is any pitch where the whole ball is below the sternum or above the kneecap and part of the ball crosses the plate.</li>
-      <li>A ball is any pitch outside this area.</li>
-    </ul>
+    <p>For a strike to be called in fastpitch softball, when the batter does not swing:</p>
+    <ol type="a">
+      <li>Top of the ball: must be at or below the bottom of the batter's sternum.</li>
+      <li>Bottom of the ball: must be at or above the bottom of the batter's kneecap.</li>
+      <li>Horizontal position: any part of the ball must enter the strike zone over any part of home plate.</li>
+    </ol>
+    <p>note: WBSC Fast pitch  Softball rules 2026-2029 Rule 5.1.43 and Rule 5.4.3(c)(i).</p>
   </div>
 
   <div class="footer">U18 BLACK SOX • Strike Zone Quiz</div>
@@ -374,8 +377,8 @@ const balls = [
 ];
 
 const answerKey = [
-  'Ball', 'Ball', 'Strike', 'Ball', 'Strike',
-  'Strike', 'Strike', 'Strike', 'Ball', 'Ball'
+  'Ball', 'Strike', 'Strike', 'Ball', 'Ball',
+  'Strike', 'Strike', 'Strike', 'Strike', 'Ball'
 ];
 
 let answers = Array(balls.length).fill(null);
